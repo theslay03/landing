@@ -13,24 +13,26 @@
         <header class="header">
             <div class="header__container">
                 <div class="header__left">
-                    <img class="header__logo" src="image/Logo.svg" alt="logo">
-                    <img class="header__name" src="image/NoTab.svg"alt="name">
+                    <img class="header__logo" src="image/svg/Logo.svg" alt="logo">
+                    <img class="header__name" src="image/svg/NoTab.svg"alt="name">
                 </div>
                 <div class="header__right">
-                    <img class="header__account" src="image/Account.svg"alt="account">                   
+                    <img class="header__account" src="image/svg/Account.svg"alt="account">                   
                     <a class="header__login" href="#">Login</a>
                 </div>
             </div>        
         </header>
 
         <main class="main">
-            
+<!-- Картинка телефона все портит, как с ней справиться -->
             <section class="platform">
                 <div class="platform__container">
                     <div class="platform__block-text block-text">
                         <h1 class="block-text__title"> A platform<br> that works smarter</h1>
                         <div class="block-text__txt-and-line txt-and-line">
-                            <div class="txt-and-line__line"></div>
+                            <div class="txt-and-line__line">
+                                <img class="pline" src="image/png/Line.png" alt="line">                                
+                            </div>
                             <div class="txt-and-line__text">NoTab allows bars & nightclubs to manage, understand,and grow their business from a single dashboard</div>
                         </div>   
                     </div>     
@@ -39,8 +41,7 @@
                             <source  srcset="image/webp/Iphone.webp" type="image/webp">
                             <source  srcset="image/png/Iphone.png"type="image/png">
                             <img src="image/png/Iphone.png" alt="graph">                       
-                        </picture>
-                        <!-- <img src="image/png/Iphone.png" alt="Iphone"> -->
+                        </picture>                        
                     </div>            
                 </div>
             </section>
@@ -50,10 +51,10 @@
                         <div class="download__title">DOWNLOAD OUR APP</div>
                             <div class="download__box-container download-box">
                                 <picture class="download-box__apple" >                                
-                                    <a href="#"><img  src="image/Appstore.svg" alt="" width="100%"/></a>
+                                    <a href="#"><img  src="image/svg/Appstore.svg" alt="" width="100%"/></a>
                                 </picture> 
                                 <picture class="download-box__google" >                                
-                                    <a href="#"><img  src="image/GooglePlay.svg" alt="" width="100%"/></a>
+                                    <a href="#"><img  src="image/svg/GooglePlay.svg" alt="" width="100%"/></a>
                                 </picture> 
                             </div>        
                 </div>
@@ -79,7 +80,7 @@
                     </div>
                 </div>
             </section>
-
+<!-- картинка с телефоном также все портит -->
             <section class="mission">
                 <div class="mission__container">
                     <img class="mission__img-iphone" src="image/png/PustoyIphone.png" alt="Iphone">
@@ -91,21 +92,20 @@
                     </div>
                 </div>
             </section>
-    
+<!-- Бэкграунд на мобильной верссии перед контейнером -->
             <section class="scanner">
                 <div class="scanner__background">
                     <div class="scanner__container">
-                        <picture>                        
+                        <picture class="scanner__picture1" >                        
                             <source  srcset="image/webp/IphoneVerefic50.webp" type="image/webp">
                             <source  srcset="image/png/IphoneVerefic50.png"type="image/png">
-                            <img class="scanner__img" src="image/png/IphoneVerefic50.png" alt="graph">                       
+                            <img class="scanner__img1" src="image/png/IphoneVerefic50.png" alt="graph">                       
                         </picture>
-                        <picture>                        
+                        <picture class="scanner__picture2" >                        
                             <source  srcset="image/webp/IphoneVerefic100.webp" type="image/webp">
                             <source  srcset="image/png/IphoneVerefic100.png"type="image/png">
-                            <img class="scanner__img" src="image/png/IphoneVerefic100.png" alt="graph">                       
-                        </picture>
-                       
+                            <img class="scanner__img2" src="image/png/IphoneVerefic100.png" alt="graph">                       
+                        </picture>                       
                         <div class="scanner__text text-scanner" >
                             <h2 class="text-scanner__title">ID Scanner</h2>
                             <div class="text-scanner__text">Scan, verify, and collect data on each person that walks through your door
@@ -115,7 +115,7 @@
                     </div>
                 </div>
             </section>
-
+<!-- с адаптацией какая то нелепица -->
             <section class="integration">
                 <div class="integration__container">    
                         <div class="integration__text text-bi">
@@ -164,7 +164,7 @@
                             </div>
                 </div>
             </section>
-
+<!-- фон также разобраться -->
             <section class="qrcode">
                 <div class="qrcode__container">            
                     <div class="qrcode__text">
@@ -172,10 +172,10 @@
                         <div class="qrcode__small-text"> No more conflict situations due to wrong order. The guest selects the positions, and after that an individual QR code of his order is generated</div>
                             <div class="qrcode__text__download-box download-box ">
                                 <picture class="download-box__apple" >                                
-                                    <a href="#"> <img  src="image/Appstore.svg" alt="" width="100%"/></a>
+                                    <a href="#"> <img  src="image/svg/Appstore.svg" alt="" width="100%"/></a>
                                 </picture>                     
                                 <picture class="download-box__google" >                               
-                                    <a href="#"><img  src="image/GooglePlay.svg" alt="" width="100%"/></a>
+                                    <a href="#"><img  src="image/svg/GooglePlay.svg" alt="" width="100%"/></a>
                                 </picture>                     
                             </div>    
                     </div>
@@ -191,34 +191,47 @@
                     </picture>                   
                 </div>        
             </section>
+<!-- Бэкграунд и стрелка адаптация -->
+            <section class="notab">
+                <div class="notab__container">             
+                    <div class="notab__image">
+                        <picture >                        
+                            <source  srcset="image/webp/IphoneQR.webp" type="image/webp">
+                            <source  srcset="image/png/IphoneQR.png"type="image/png">
+                            <img class="picturess" src="image/png/IphoneQR.png" alt="Iphone">                       
+                        </picture>
+                    </div>
+                        <div class="generate-qr__container">
+                            <h2 class="generate-qr__title">Generate your QR-code</h2>
+                            <div class="generate-qr_small-text">The guest QR code is scanned
+                                by the staff and automatically sent</div>
+                        </div>
+                        <div class="notab__arrow">
+                            <img  src="image/svg/Arrow.svg" alt="">
+                            <div class="notab__arrow-text" >Scan QR code</div>
+                        </div>
+                </div>   
+            </section>
 
-        <!-- доделать  -->
-        <!-- <section>
-        <div class="no_tab">
-            <div class="text_notab">
-                <img class="img_notab1" src="src/img/NOTAB.png" alt="NOTAB">
-                <img class="img_notab2" src="src/img/NOTAB (2).png" alt="NOTAB">
-                <img class="img_notab3" src="src/img/NOTAB (3).png" alt="NOTAB">
-                <img class="img_notab4" src="src/img/NOTAB (4).png" alt="NOTAB">
-                <img class="img_iphone_qr" src="src/img/Group 533.png" alt="NOTAB">
+        <!-- Удалить -->
+        <!-- <section >
+            <div class="no_tab">
+                <div class="text_notab">
+                    <img class="img_notab1" src="src/img/NOTAB.png" alt="NOTAB">
+                    <img class="img_notab2" src="src/img/NOTAB (2).png" alt="NOTAB">
+                    <img class="img_notab3" src="src/img/NOTAB (3).png" alt="NOTAB">
+                    <img class="img_notab4" src="src/img/NOTAB (4).png" alt="NOTAB">
+                    <img class="img_iphone_qr" src="src/img/Group 533.png" alt="NOTAB">
+                </div>
             </div>
-        </div>
         </section> -->
 
-        <section class="generate-qr">
-            <div class="generate-qr__container">
-                <h2 class="generate-qr__title">Generate your QR-code</h2>
-                <div class="generate-qr_small-text">The guest QR code is scanned
-                    by the staff and automatically sent</div>
-            </div>
-        </section>
-
-        <section class="easier" >
-            <div class="easier__container">            
-                <h2 class="easier__big-text">Easier ordering. Happier guests.</h2>
-                <div class="easier__small-text">NoTab makes it simple for patrons to easily</div>       
-            </div>
-        </section>
+            <section class="easier" >
+                <div class="easier__container">            
+                    <h2 class="easier__big-text">Easier ordering. Happier guests.</h2>
+                    <div class="easier__small-text">NoTab makes it simple for patrons to easily</div>       
+                </div>
+            </section>
 
 <div class="lenta">   
         <div class="lenta__box1">
@@ -305,8 +318,8 @@
             </div>
         </footer>
 
-<script src="jquery-3.6.0.min.js"></script>
-<script src="script.js"></script>
+<!-- <script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script> -->
 
 </body>
 </html>
