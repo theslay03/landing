@@ -24,7 +24,7 @@
         </header>
 
         <main class="main">
-<!-- Картинка телефона все портит, как с ней справиться -->
+
             <section class="platform">
                 <div class="platform__container">
                     <div class="platform__block-text block-text">
@@ -38,9 +38,9 @@
                     </div>     
                     <div class="platform__image">
                         <picture>                        
-                            <source  srcset="image/webp/Iphone.webp" type="image/webp">
-                            <source  srcset="image/png/Iphone.png"type="image/png">
-                            <img src="image/png/Iphone.png" alt="graph">                       
+                            <source  srcset="image/webp/Iphone2.webp" type="image/webp"> 
+                            <source  srcset="image/png/Iphone2.png"type="image/png">
+                            <img class="platform__picture" src="image/png/Iphone2.png" alt="graph">                       
                         </picture>                        
                     </div>            
                 </div>
@@ -80,10 +80,14 @@
                     </div>
                 </div>
             </section>
-<!-- картинка с телефоном также все портит -->
+
             <section class="mission">
                 <div class="mission__container">
-                    <img class="mission__img-iphone" src="image/png/PustoyIphone.png" alt="Iphone">
+                    <picture>                        
+                        <source  srcset="image/webp/Iphone2.webp" type="image/webp"> 
+                        <source  srcset="image/png/Iphone2.png"type="image/png">
+                        <img class="mission__img-iphone" src="image/png/Iphone2.png" alt="graph">                       
+                    </picture>
                     <div class="mission__text text-vision">
                         <h2 class="text-vision__title">Our mission and vision</h2> 
                         <div class="text-vision__text">While technology is our sweet spot, we`ve developed our vision alongside
@@ -92,7 +96,15 @@
                     </div>
                 </div>
             </section>
-<!-- Бэкграунд на мобильной верссии перед контейнером -->
+
+            <section class="cookie2">
+                <div class="cookie2__content">
+                    <div class="cookie2__text">We use cookie to improve your experience on our site.
+                         By using our site you consent cookies. </div>
+                        <button class="cookie2__button">OK</button>
+                </div> 
+            </section>
+
             <section class="scanner">
                 <div class="scanner__background">
                     <div class="scanner__container">
@@ -115,7 +127,7 @@
                     </div>
                 </div>
             </section>
-<!-- с адаптацией какая то нелепица -->
+
             <section class="integration">
                 <div class="integration__container">    
                         <div class="integration__text text-bi">
@@ -164,7 +176,19 @@
                             </div>
                 </div>
             </section>
-<!-- фон также разобраться -->
+
+            <section class="dj-and-kokt">
+                <div class="dj-and-kokt__boxing ">
+                    <div>
+                        <img  class="dj-and-kokt__img1" src="image/png/DJ.png" alt="dj">
+                    </div>
+                    <div class="dj-and-kokt__Nightlife Nightlife" >
+                        <img  class="Nightlife__img2" src="image/png/koktail.png" alt="koktail">
+                        <img class="Nightlife__stiker" src="image/svg/Nightlife.svg" alt="night">
+                    </div>
+                </div>
+            </section>
+
             <section class="qrcode">
                 <div class="qrcode__container">            
                     <div class="qrcode__text">
@@ -191,14 +215,14 @@
                     </picture>                   
                 </div>        
             </section>
-<!-- Бэкграунд и стрелка адаптация -->
+
             <section class="notab">
                 <div class="notab__container">             
                     <div class="notab__image">
                         <picture >                        
                             <source  srcset="image/webp/IphoneQR.webp" type="image/webp">
                             <source  srcset="image/png/IphoneQR.png"type="image/png">
-                            <img class="picturess" src="image/png/IphoneQR.png" alt="Iphone">                       
+                            <img class="notab__iphone" src="image/png/IphoneQR.png" alt="Iphone">                       
                         </picture>
                     </div>
                         <div class="generate-qr__container">
@@ -236,82 +260,77 @@
             </section>
 
             <section class="iphone-notab">
-                <!-- <div class="iphone-tab__container"> -->
                     <div class="iphone-tab__image">
-                        <img src="image/png/iphoneClear.png" alt="">
-                    </div>                    
-                <!-- </div> -->
+                        <img src="image/png/test.png" alt="">
+                     </div>
             </section>
 
-        <section class="getintouch" >      
-            <div class="getintouch__container">
-                <h2 class="getintouch__big-text">Get In Touch</h2>
-                <div class="getintouch__small-text"> Have questions about Noble or just want to say hello?
-                    Drop us a line and a member of our team will get back to you shortly.</div>
-            </div>     
-        </section>
+            <section class="getintouch" >
+                <div class="getintouch__container">
+                    <h2 class="getintouch__big-text">Get In Touch</h2>
+                    <div class="getintouch__small-text"> Have questions about Noble or just want to say hello?
+                        Drop us a line and a member of our team will get back to you shortly.</div>
+                </div>     
+            </section>
 
-        <section class="form">
-                <div class="input__container">
-                    <div class="input__content">
-                    <form action="" method="get">
-                        <div >
-                            <input placeholder="Name" class="input__name" required type="text">
-                        </div>
-                        <div>
-                            <input placeholder="Venue Name" class="input__Venue-name" type="text" >
-                        </div>
-                        <div>
-                            <input placeholder="Venue City" class="input__Venue-city" type="text" >
-                            <input placeholder="State City" class="input__state-city" type="text" >
-                        </div>
-                        <div>       
-                            <input placeholder="Email"  class="input__email" type="email">
-                        </div>
-                        <div>       
-                            <input placeholder="Subject"  class="input__subject" type="text">
-                        </div>
-                        <div>
-                            <textarea placeholder="Message" class="input__message" ></textarea>
-                        </div>
-                        <div>
-                        <button type="submit" class="send__button">Send</button>
-                        </div>
+            <section class="form">
+                    <div class="input__container">
+                        <div class="input__content">
+                            <form action="" method="get">
+                                <div >
+                                    <input placeholder="Name" class="input__name" required type="text">
+                                </div>
+                                <div>
+                                    <input placeholder="Venue Name" class="input__Venue-name" required type="text" >
+                                </div>
+                                <div>
+                                    <input placeholder="Venue City" class="input__Venue-city"  required type="text" >
+                                    <input placeholder="State City" class="input__state-city" required type="text" >
+                                </div>
+                                <div>       
+                                    <input placeholder="Email"  class="input__email" required type="email">
+                                </div>
+                                <div>       
+                                    <input placeholder="Subject"  class="input__subject" required type="text">
+                                </div>
+                                <div>
+                                    <textarea placeholder="Message" class="input__message" required ></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="send__button">Send</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    </form>
-                </div>
             </section>
 
-<div class="downladapp">DOWNLOAD OUR APP</div>
-    <div class="refforapp__box-container">
-        <div class="box1">
-            <img src="src/img/Group.png" alt="apple">      
-        </div>
-        <div class="box2">
-            <img src="src/img/GroupGoglePlay.png" alt="samsung">
-        </div>
-</div>
+            <section class="refDownload"> 
+                <div class="refDownload__container">       
+                    <div class="refDownload__title">DOWNLOAD OUR APP</div>
+                        <div class="refDownload__download-box download-box ">
+                            <picture class="download-box__apple" >                                
+                                <a href="#"> <img  src="image/svg/Appstore.svg" alt="" width="100%"/></a>
+                            </picture>                     
+                            <picture class="download-box__google" >                               
+                                <a href="#"><img  src="image/svg/GooglePlay.svg" alt="" width="100%"/></a>
+                            </picture>                     
+                        </div>
+                </div>     
+            </section>
         </main>
+
         <footer>
             <div class="footer__container">
-                <div class="footer__container_left">
-                    <img class="img_notab" src="src/img/Group 480.png" alt="no tab">
-                    <div class="contact_supp">Contact us: support@notab.com</div>
-                    <div class="footer__year">© 2020 - NoTab®</div>
+                <div class="footer__contant-left contant-left">
+                    <img class="contant-left__notab" src="image/svg/FooterNotab.svg" alt="no tab">
+                    <div class="contant-left__supp">Contact us: support@notab.com</div>
+                    <div class="contant-left__year">© 2020 - NoTab®</div>
                 </div>
-                <div class="footer__container_right">
-                    <div>
-                    <a href="#" class="footer__ref1">Terms to use</a>
-                </div>
-                <div>
-                    <a href="#"class="footer__ref2">Privacy policy</a>
-                </div>
+                <div class="footer__contant-right contant-right">                    
+                    <div><a href="#"class="contant-right__ref1">Terms to use</a></div>                    
+                    <div><a href="#"class="contant-right__ref2">Privacy policy</a></div>
                 </div>
             </div>
         </footer>
-
-<!-- <script src="jquery-3.6.0.min.js"></script>
-<script src="script.js"></script> -->
-
 </body>
 </html>
