@@ -37,12 +37,7 @@ h2{
         /* margin-left: 15px; */
         margin-right: 15px;
         padding: 0px 0px;
-    }
-    /* body{     
-        height: 100%;     
-        background-color: black;
-        margin: 0px 0px 0px 0px;
-    } */
+    }   
 }
 a:hover{
     color: rgb(235, 11, 243);
@@ -674,8 +669,9 @@ a:visited {
     .integration__img7 {
         Width: 296px;
         Height:59px;
-        left: 70px;
-        bottom: -275px;             
+        left: 55px;
+        bottom: -296px;
+    }            
     }
 }
 /* ===================================================================================== */
@@ -1316,7 +1312,8 @@ textarea:invalid{
     color: #FFFFFF;    
 }
 .refDownload{
-    margin-top: 90px;   
+    margin-top: 90px;
+    margin-bottom: 58px;   
 }
 .refDownload__container{
     display: flex;
@@ -1324,15 +1321,20 @@ textarea:invalid{
     flex-direction: column;
 }
 /* =============================================================================================== */
+footer{ height: 310px;
+    background: url(image/png/BackFooter.png) bottom left  no-repeat;
+    
+}
 .footer__container{
+    padding-top: 92px;
     display: flex;
     justify-content: space-between;
 }
-.img_notab{
-    width: 81.01px;
-    height: 16.15px;
+.contant-left__notab{
+ 
+    margin-bottom: 15px;
 }
-.contact_supp{
+.contant-left__supp{
     width: 171px;
     height: 50px;
     font-family: 'Roboto';
@@ -1341,8 +1343,9 @@ textarea:invalid{
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
+    margin-bottom: 15px;
 }
-.footer__year{
+.contant-left__year{
     width: 148px;
     height: 25px;
     font-family: 'Roboto';
@@ -1352,7 +1355,18 @@ textarea:invalid{
     line-height: 25px;
     color: #FFFFFF;
 }
-.footer__ref1{
+.contant-right__ref1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    width: 107px;
+    height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.contant-right__ref2{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
@@ -1362,13 +1376,42 @@ textarea:invalid{
     height: 25px;
     color: #FFFFFF;
 }
-.footer__ref2{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 25px;
-    width: 107px;
-    height: 25px;
-    color: #FFFFFF;
+.contant-right__box1{
+    margin-bottom: 20px;
+}
+.contant-right{
+   align-self: center; 
+}
+a.contant-right__ref1, .contant-right__ref2{
+    text-decoration: none;
+}
+@media( max-width: 375px){
+    .footer__container{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0px;
+        
+    }
+    .contant-left{
+        text-align: -webkit-center;
+        flex: 1 0 100%;
+        order: 2;       
+
+    }
+    .contant-right{
+        order: 1;
+        flex: 1 0 100%;
+        text-align: -webkit-center;
+        padding-bottom: 60px;
+    }
+    .contant-left__year{
+        width: 209px;
+        height: 19px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .contant-left__supp{ 
+        font-size: 14px;
+        line-height: 19px;
+    }
 }
